@@ -2,10 +2,10 @@
   Використовуйте generics та інтерфейси, щоб виправити помилку в наступних класах:
 */
 interface PageComponent {
-  title: any;
+  title: string;
 }
 
-class Component<T extends PageComponent> {
+class Component<T> {
   constructor(public props: T) {}
 }
 
